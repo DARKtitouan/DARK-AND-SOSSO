@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(45deg,rgb(111, 0, 255),rgb(225, 0, 255));
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.formulaire {
+    border-radius: 15px;
+    background: rgba(132, 0, 255, 0.664);
+    border: 2px solid black;
+    height: 425px;
+    width: 425px;
+    box-shadow: 35px 35px 35px rgb(86, 0, 121);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .7s;
+    transform: translate(5px,5px);
+}
+
+.formulaire:hover{
+    box-shadow: 55px 45px 55px rgb(86, 0, 121);
+    transform: translate(-5px,-5px);
+}
+
+h1 {
+    text-align: center;
+    font-family: cursive;
+}
+
+.username, #pass, button {
+    border-radius: 5px;
+    border: 2px solid black;
+    height: 35px;
+    width: 80%;
+    font-size: 20px;
+    text-align: center;
+    font-family: cursive;
+    margin: 10px 0;
+}
+
+button {
+    width: 70%;
+    font-size: 20px;
+    background-color: aliceblue;
+    cursor: pointer;
+    transition: .8s;
+}
+
+button:hover{
+    background-color: blueviolet;
+}
+
+
+#info p {
+    margin: 5px 0;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+#success-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.solaraLien{
+    color: rgb(255, 255, 255);
+    text-decoration: dashed underline rgb(255, 0, 255);
+    font-family: cursive;
+    transition: .7s;
+}
+
+.solaraLien:hover{
+    text-decoration: solid underline rgb(255, 0, 128);
+}
